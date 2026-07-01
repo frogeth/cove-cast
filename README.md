@@ -68,9 +68,9 @@ found, you get an empty view telling you to copy a CA first.
   - reads the token symbol/name,
   - sums `liquidity.usd` per chain and sorts chains by liquidity.
 
-A chain counts as supported when Cove has a chain code for it — all **10 Cove networks**
-(ethereum, base, bnb/`bsc`, megaeth, solana, tempo, monad, story, hyperevm, plasma). There is no
-configured allow-list and no fallback default chain; detection alone decides:
+A chain counts as supported when Cove has a chain code for it — all **11 Cove networks**
+(ethereum, base, bnb/`bsc`, megaeth, solana, tempo, monad, story, hyperevm, plasma, robinhood).
+There is no configured allow-list and no fallback default chain; detection alone decides:
 
 | Result                                              | Behavior                                          |
 | --------------------------------------------------- | ------------------------------------------------- |
@@ -115,7 +115,7 @@ All editable in Raycast → Extensions → CoveCast.
 | **Quick Buy Amount (USD)** | `25`            | The USD amount the **Quick Buy** command fires in one keystroke. Decimals allowed. |
 | **Default Buy Action**     | Immediate buy   | _Immediate buy_ (instant) or _Market panel_ (opens Cove's buy panel to confirm).   |
 
-The bot handle (`cove_trading_bot`) and the supported-chain set (all 10 Cove networks) are baked
+The bot handle (`cove_trading_bot`) and the supported-chain set (all 11 Cove networks) are baked
 into the code, not preferences. Invalid entries in the amount lists are ignored.
 
 ## Development
